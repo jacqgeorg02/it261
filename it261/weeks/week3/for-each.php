@@ -18,7 +18,7 @@ foreach($wines as $key) {
 echo '</ul>';
 
 echo '<h2>Movies and Shows list that will have both a key and a value</h2>';
-//  akey then a value ''=>''
+//  a key then a value ''=>''
 
 $shows = [
 // 'Apple TV' => 'The Morning Show',
@@ -26,7 +26,7 @@ $shows = [
 // 'Prime Video' => 'Killing Eve',
 // 'Acorn TV' => 'Brokenwood Mysteries',
 // 'Movie' => 'The Lost King',
-// 'Netflix2' => 'Suits'
+// 'Netflix' => 'Suits'
 
 'The Morning Show' => 'Apple TV',
 'The Beauty Queen of Jerusalem' => 'Netflix',
@@ -38,7 +38,7 @@ $shows = [
 
 echo '<ul>';
 foreach($shows as $key => $value) {
-    echo '<li> <i>'.$key.'</i>: <b>'.$value.'</b> </li>';
+    echo '<li> <b>'.$value.'</b>: <i>'.$key.'</i> </li>';
 }
 echo '</ul>';
 

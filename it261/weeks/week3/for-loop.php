@@ -57,9 +57,26 @@
     }
     ?>
     </table>
+    <h1>My Celsius / Fahrenheit Table with an increment of 3 </h1>
+    <table>
+    <tr>
+        <th>Celsius</th>
+        <th>Fahrenheit</th>
+    </tr>
+    <?php
+    for($cel = 0; $cel <=100; $cel += 3) {
+        $fahr = ($cel * 9/5) + 32;
+        echo '<tr>';
+        echo '<td> '.$cel.' degrees </td>';
+        echo '<td>'.number_format($fahr, 0).' degrees </td>';
+        echo '</tr>';
+    }
+    ?>
+    </table>
+
     <h2>You will now complete a kilometer / mileage table on your own.</h2>
 
-    <h1>My Kilometer / Mileage Table </h1>
+    <h1>My Kilometer / Mileage Table</h1>
     <table>
     <tr>
         <th>Kilometers</th>
@@ -75,7 +92,7 @@
     }
     ?>
     </table>
-
+    <h1>My Kilometer / Mileage Table with 1 Decimal Place</h1>
     <table>
     <tr>
         <th>Kilometers</th>
