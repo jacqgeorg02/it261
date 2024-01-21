@@ -8,8 +8,8 @@
 <body>
 
 <?php
-$name = "Handmaid's Tale";
-$myDoc = "One of my favorite books is The $name, written by Margaret Atwood, and is presently a miniseries on HULU. Hulus viewing audience is extremely excited about the miniseries and looks forward to the 5th season of the award-winning $name! <br> Elizabeth Moss rendition of June is right on! I liked the shows first two seasons!";
+$name = "<i>The Handmaid's Tale</i>";
+$myDoc = "One of my favorite books is $name, written by Margaret Atwood, and is presently a miniseries on HULU. Hulu's viewing audience is extremely excited about the miniseries and looks forward to the 5th season of the award-winning $name! <p> Elizabeth Moss' rendition of June is right on! I liked the shows first two seasons!</p>";
 
 echo $myDoc; 
 
