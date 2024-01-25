@@ -107,39 +107,44 @@ case 'Saturday' :
 
 <h2>Check out our Songs for the Week!</h2>
     <ul>
-    <li><a href="daily.php?today=Sunday">Sunday</a></li>
+    <li><a style="color:<?php
+    if($today == 'Sunday') {
+        echo '#0C0D03';
+    } else {
+        echo '#800000';
+    }?>"href="daily.php?today=Sunday">Sunday</a></li>
 
     <li><a style="color:<?php
     if($today == 'Monday') {
-        echo 'green';
+        echo '#A61F82';
     } else {
         echo '#800000';
     }?>"href="daily.php?today=Monday">Monday</a></li>
 
     <li><a style="color:<?php
     if($today == 'Tuesday') {
-        echo 'green';
+        echo '#BF5E26';
     } else {
         echo '#800000';
     }?>"href="daily.php?today=Tuesday">Tuesday</a></li>
 
     <li><a style="color:<?php
     if($today == 'Wednesday') {
-        echo 'green';
+        echo '#737373';
     } else {
         echo '#800000';
     }?>"href="daily.php?today=Wednesday">Wednesday</a></li>
 
     <li><a style="color:<?php
     if($today == 'Thursday') {
-        echo 'green';
+        echo '#404040';
     } else {
         echo '#800000';
     }?>"href="daily.php?today=Thursday">Thursday</a></li>
 
     <li><a style="color:<?php
     if($today == 'Friday') {
-        echo 'green';
+        echo '#351159';
     } else {
         echo '#800000';
     }?>"href="daily.php?today=Friday">Friday</a></li>
