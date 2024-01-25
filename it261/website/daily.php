@@ -22,7 +22,7 @@ $content = '<p><b>"Sunday Mornin\' Comin\' Down"</b> is a song written by Kris K
 break;
 
 case 'Monday' : 
-    $song = '<h2>Sunday\'s song is "Manic Monday"</h2>';
+    $song = '<h2>Monday\'s song is "Manic Monday"</h2>';
     $perf = '<p>Performed by The Bangles</p>';
     $album = '<p>From the album <i>Different Light</i></p>';
     $relyr = '<p>Released in 1986</p>';
@@ -108,23 +108,56 @@ case 'Saturday' :
 <h2>Check out our Songs for the Week!</h2>
     <ul>
     <li><a href="daily.php?today=Sunday">Sunday</a></li>
-    <li><a href="daily.php?today=Monday">Monday</a></li>
-    <li><a href="daily.php?today=Tuesday">Tuesday</a></li>
-    <li><a href="daily.php?today=Wednesday">Wednesday</a></li>
-    <li><a href="daily.php?today=Thursday">Thursday</a></li>
-    <li><a href="daily.php?today=Friday">Friday</a></li>    
-    <li><a href="daily.php?today=Saturday">Saturday</a></li>
+
+    <li><a style="color:<?php
+    if($today == 'Monday') {
+        echo 'green';
+    } else {
+        echo '#800000';
+    }?>"href="daily.php?today=Monday">Monday</a></li>
+
+    <li><a style="color:<?php
+    if($today == 'Tuesday') {
+        echo 'green';
+    } else {
+        echo '#800000';
+    }?>"href="daily.php?today=Tuesday">Tuesday</a></li>
+
+    <li><a style="color:<?php
+    if($today == 'Wednesday') {
+        echo 'green';
+    } else {
+        echo '#800000';
+    }?>"href="daily.php?today=Wednesday">Wednesday</a></li>
+
+    <li><a style="color:<?php
+    if($today == 'Thursday') {
+        echo 'green';
+    } else {
+        echo '#800000';
+    }?>"href="daily.php?today=Thursday">Thursday</a></li>
+
+    <li><a style="color:<?php
+    if($today == 'Friday') {
+        echo 'green';
+    } else {
+        echo '#800000';
+    }?>"href="daily.php?today=Friday">Friday</a></li>
+
+    <li><a style="color:<?php
+    if($today == 'Saturday') {
+        echo 'green';
+    } else {
+        echo '#800000';
+    }?>"href="daily.php?today=Saturday">Saturday</a></li>
     </ul>
+    </main>
 
+    <aside>
+    <img src="./images/<?php echo $pic;?>" alt="<?php echo $alt;?>">
+    </aside>
 
-
-        </main>
-
-        <aside>
-        <img src="./images/<?php echo $pic;?>" alt="<?php echo $alt;?>">
-        </aside>
-
-        <!-- end wrapper -->
+    <!-- end wrapper -->
     </div>
 
     <?php
