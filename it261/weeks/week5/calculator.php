@@ -7,6 +7,7 @@
     <link href="css/styles.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+<h1>My Travel Calculator</h1>   
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ;?>" method="post">
 <fieldset>
 <label>Name</label>
