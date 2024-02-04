@@ -49,6 +49,13 @@ form ul {
     width:400px;
     padding:10px;
     margin:0px auto;
+    /* background-color:#BF612A; */
+}
+
+.box p, h2 {
+    /* color:antiquewhite; */
+    color:#262523;
+    
 }
 
 .error {
@@ -56,3 +63,23 @@ form ul {
     font-style:italic;
     text-align:center;
 }
+
+h1 {
+    text-align:center;
+}
+
+.vid {
+    width:600px;
+    padding:10px;
+    margin:0px auto;
+    /* background-color:#BF612A; */
+}
+
+.vid p, h2 {
+    text-align:center;
+    color:#59050C;
+}
+
+
+
+
