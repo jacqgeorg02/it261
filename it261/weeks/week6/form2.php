@@ -160,7 +160,7 @@ if(!empty(
     <link href="css/styles.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <h1>First Form in Week 6</h1>
+    <h1>Second Form in Week 6</h1>
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])   ;?>" method="post">
 <fieldset>
 <legend>
@@ -208,7 +208,6 @@ Contact Jacquie
 <label>Regions</label>
 <select name="regions">
 <option value="" <?php if(isset($_POST['regions']) && is_null($_POST['regions'])) echo 'selected = "unselected"' ;?>>Select One!</option>
-<span> <?php echo $regions_err;?> </span>
 
 <option value="nw" <?php if(isset($_POST['regions']) && $_POST['regions'] == "nw") echo 'selected = "selected"' ;?>>Northwest</option>
 
@@ -220,6 +219,7 @@ Contact Jacquie
 
 <option value="se" <?php if(isset($_POST['regions']) && $_POST['regions'] == "se") echo 'selected = "selected"' ;?>>Southeast</option>
 </select>
+<span> <?php echo $regions_err;?> </span>
 
 <label>Comments</label>
 <textarea name="comments"><?php if(isset($_POST['comments'])) echo htmlspecialchars($_POST['comments'])  ;?></textarea>
