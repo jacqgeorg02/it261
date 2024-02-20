@@ -1,9 +1,42 @@
-    <?php include('./includes/header.php'); ?>
+    <?php 
+    include('config.php');  
+    include('./includes/header.php'); ?>
 
     <div id="wrapper">
     
     <div id="hero">
-    <img src="images/twelve.jpg" alt="Twelve is greater than 3">
+
+<?php
+// we need to make an array
+
+$photos[0] = 'naches';
+$photos[1] = 'skyline1a';
+$photos[2] = 'mtraintrail1a';
+$photos[3] = 'lake22a';
+$photos[4] = 'laconner2';
+$photos[5] = 'hikeicicles2';
+$photos[6] = 'grancan2a';
+$photos[7] = 'josh3';
+
+$i = rand(0, 7);
+
+$selected_image = ''.$photos[$i].'.jpg';
+echo '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'">';
+
+echo '<h2>Let\'s create a function!</h2>';
+
+function random_images($photos) {
+$my_return = '';
+$i = rand(0, 7);
+$selected_image = ''.$photos[$i].'.jpg';
+$my_return = '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'">';
+return $my_return;
+}
+// end of function
+
+?>
+
+    <!-- <img src="images/twelve.jpg" alt="Twelve is greater than 3"> -->
     <!-- end of hero -->
     </div>
 
@@ -24,8 +57,9 @@
 
         </aside>
 
-        <!-- end wrapper -->
+    <!-- end wrapper -->
     </div>
 
     <?php
     include('./includes/footer.php');
+    // the closing php tag is unnecessary because there will be no HTML following this
