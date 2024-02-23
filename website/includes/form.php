@@ -1,78 +1,7 @@
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form 3 in Week 7 -- Phone Validation!</title>
-    <style>
-    * {
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
-}
 
-body {
-    background:#D8EDCE;
-}
-
-form {
-    width:500px;
-    margin:30px auto;
-}
-
-label {
-    display:block;
-    margin-bottom:5px;
-    font-weight:bold;
-}
-
-span {
-    display:block;
-    color:#0800F5;
-    font-style:italic;
-    margin-bottom:10px;
-}
-
-fieldset {
-    padding:10px;
-}
-
-input[type=text],
-input[type=email],
-input[type=tel] {
-    width:100%;
-    margin-bottom:10px;
-}
-
-select {
-    margin-bottom:10px;
-}
-
-textarea {
-    width:100%;
-    resize:none;
-    height:80px;
-    margin-bottom:10px;
-}
-
-form ul {
-    list-style-type:none;
-    margin-bottom:10px;
-    margin-left:5px;
-}
-
-h1 {
-    text-align:center;
-    margin-top:20px;
-}
-</style>
-
-    <!-- <link href="css/styles.css" type="text/css" rel="stylesheet"> -->
-</head>
-<body>
-    <h1>Hiking Trails & Beautiful Views</h1>
+<h1>Hiking Trails & Beautiful Views</h1>
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])   ;?>" method="post">
 <fieldset>
 <legend>
@@ -156,6 +85,5 @@ Contact Jacquie
 
 </fieldset>
 </form>
-</body>
-</html>
+
 
