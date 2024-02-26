@@ -42,6 +42,5 @@ $people['Pick_It_Up!'] = 'agipoo A world-wide problem -- not just Seattle!_';
 </tr>
 <?php endforeach;?>
 </table> 
-
-</body>
-</html>
+<?php
+include('./includes/footer.php');?>
