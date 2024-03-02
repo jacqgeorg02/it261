@@ -115,7 +115,7 @@ if(isset($_POST['login_user'])) {
     }
 // we are counting our errors and if we have no errors -- we will continue the same way
 
-if(count($errors) = 0) {
+if(count($errors) == 0) {
 $password = md5($password);
 
 // we are going to query our users table to make sure that our username AND password match
