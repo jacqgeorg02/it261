@@ -142,3 +142,4 @@ array_push($error, 'Wrong username/password combination!!');
 // end count errors
 }
 // close if isset login_user
+// trying to do something here!
