@@ -14,7 +14,7 @@ include('./includes/form.php');
 
 <aside>
 <h3>On the trail!</h3>
-<img src="images/hikeicicles2.jpg" alt="Jacquie on the Skyline Trail">
+<img src="images/hikeicicles2.jpg" alt="Ann on the Skyline Trail">
 </aside>
 
 <!-- end wrapper -->

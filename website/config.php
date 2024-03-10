@@ -2,6 +2,8 @@
 ob_start();
 define ('DEBUG', 'TRUE');
 
+include('credentials.php'); 
+
 // begin
 define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 switch(THIS_PAGE) {
@@ -36,8 +38,18 @@ switch(THIS_PAGE) {
     break;
 
     case 'thx.php' :
-        $title = 'Thanks Page of our Website Project';
-        $body = 'thx inner';
+    $title = 'Thanks Page of our Website Project';
+    $body = 'thx inner';
+    break;
+
+    case 'places.php' :
+    $title = 'Places Page of our Website Project';
+    $body = 'places inner';
+    break;
+
+    case 'places-view.php' :
+        $title = 'Places-View Page of our Website Project';
+        $body = 'places-view inner';
         break;
 }
 // THIS_PAGE end
@@ -47,6 +59,7 @@ $nav = array (
     'about.php' => 'About',
     'daily.php' => 'Daily',
     'project.php' => 'Project',
+    'places.php' => 'Places',
     'contact.php' => 'Contact',
     'gallery.php' => 'Gallery'
 );
@@ -525,5 +538,28 @@ $people['Goats_in_the_Peloponnese'] = 'gregoa These goats captured my attention 
 $people['Cats_in_Agios_Konstantinos'] = 'catagi These cats followed us for hours and then disappeared. This is where they ended up._';
 $people['Frog_Kiss'] = 'frogki This was one of my favorite sculptures from Arizona. Jerome? Sedona? I can\'t remember._';
 $people['Pick_It_Up!'] = 'agipoo A world-wide problem -- not just Seattle!_';
+
+
+// random images for places
+
+$places[0] = 'psgoem';
+$places[1] = 'kubota';
+$places[2] = 'birpar';
+$places[3] = 'sejama';
+$places[4] = 'solhik';
+$places[5] = 'jaemma';
+$places[6] = 'whatja';
+$places[7] = 'kohlsn';
+$places[8] = 'jimgra';
+
+$i = rand(0, 8);
+
+function random_imagess($places) {
+$my_return = '';
+$i = rand(0, 8);
+$selected_image = ''.$places[$i].'.jpg';
+$my_return = '<img src="images/'.$selected_image.'" alt="'.$places[$i].'">';
+return $my_return;
+}
 
 ?>
