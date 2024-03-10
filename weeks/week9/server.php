@@ -128,12 +128,12 @@ $results = mysqli_query($iConn, $query);
 
 if(mysqli_num_rows($results) == 1) {
 
-$_SESSION('username') = $username;
-$_SESSION('success') = $success;
+$_SESSION['username'] = $username;
+$_SESSION['success'] = $success;
 
 // if the above is successful, we'll be directed to the index.php
 
-header('Location:index.php');
+header('Location:../../website/index.php');
 } else {
 array_push($error, 'Wrong username/password combination!!');
 }

@@ -1,5 +1,6 @@
 <?php
-// include('server.php');
+include('server.php');
+include('./includes/header.php');
 // eventually we will be connecting to our header include
 // include('./includes/header.php');
 

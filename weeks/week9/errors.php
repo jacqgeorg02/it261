@@ -3,7 +3,8 @@
 // we used an array_push function because we have different messages for different errors
 // the logic is -- if we have errors, we need to display them
 
-include('config.php');
+// include('config.php');
+// I think my big mistake was the config file here. Now things are working
 
 if(count($errors) > 0) : ?>
 <div class="errors">
@@ -11,7 +12,7 @@ if(count($errors) > 0) : ?>
     <p>
     <?php echo $error;?>
     </p>
-<?php endforeach;?>
+<?php endforeach; ?>
 
 </div>
 <!-- end div errors -->
