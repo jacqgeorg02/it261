@@ -133,7 +133,7 @@ $_SESSION['success'] = $success;
 
 // if the above is successful, we'll be directed to the index.php
 
-header('Location:../../website/index.php');
+header('Location:index.php');
 } else {
 array_push($error, 'Wrong username/password combination!!');
 }

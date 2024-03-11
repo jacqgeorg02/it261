@@ -1,15 +1,14 @@
 <?php
 include('server.php');
 include('./includes/header.php');
-// eventually we will be connecting to our header include
-// include('./includes/header.php');
-
-
 ?>
+
+<div id="wrapper">
+<h1 class="center">Register Today!</h1>
 
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ;?>" method="POST">
 <!-- don't forget our labels. we'll need a first_name, last_name,email, username, password1, password2 -->
-
+<fieldset>
 <label>First name</label>
 <input type="text" name="first_name" value="<?php if(isset($_POST['first_name'])) echo htmlspecialchars($_POST['first_name'])  ;?>">
 
@@ -31,8 +30,12 @@ include('./includes/header.php');
 <button type="submit" name="reg_user" class="btn">Register!</button>
 
 <button type="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF'])  ;?>'">Reset</button>
-
+</fieldset>
 </form>
-
+<p class="center">Already a member? <a href="login.php">Please log in here!</a></p>
 <?php
 include('errors.php');?>
+</div>
+<!-- end of wrapper -->
+<?include('./includes/footer.php');
+?>
