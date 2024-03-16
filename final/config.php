@@ -221,7 +221,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 
 if(empty($_POST['trails'])) {
 // say or do something or do else
-$trails_err = 'What...no interesting trails?';
+$trails_err = 'What...no interest in National Parks?';
 } else {
     $trails = $_POST['trails'];
 }
@@ -313,7 +313,7 @@ $_POST['regions'],
 $_POST['comments'],
 $_POST['privacy'])) {
 
-$to = 'jacqueline.george@seattlecolleges.com';
+$to = 'jacqueline.george@seattlecolleges.edu';
 $subject = 'Test email on  '.date('m/d/y, h i A');
 $body = '
 First Name:  '.$first_name.' '.PHP_EOL.'
