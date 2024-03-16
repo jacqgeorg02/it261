@@ -15,6 +15,23 @@ include('./includes/header.php'); ?>
 </tr>
 <?php endforeach;?>
 </table> 
+
+<table>
+<tr><th>My Database Images</th></tr>
+<tr>
+<td>My National Parks Table</td>
+</tr>
+<tr>
+<td><img src="images/georgeparks.jpg" alt="Jacquie's National Park Database Table"></td>
+</tr>
+<tr>
+<td>My Users Table</td>
+</tr>
+<tr>
+<td><img src="images/georgeusers.jpg" alt="Jacquie's Users Database Table"></td>
+</tr>
+</table>
+
 <?php
 
 include('./includes/footer.php');?>
