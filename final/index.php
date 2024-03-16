@@ -21,7 +21,7 @@ include('./includes/header.php');?>
 <!-- MY WRAPPER STARTS HERE -->
 <div id="wrapper">
     
-<h1>Welcome to the home page of our National Parks website!</h1>
+<h1>Welcome to Jacquie's National Parks Website!</h1>
 <?php echo random_images($parkel);?>
 
 <main>

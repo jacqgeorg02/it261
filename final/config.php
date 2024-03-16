@@ -357,10 +357,10 @@ if(!empty(
 // trying to put the gallery in here
 
 $park['At_the_rim_of_the_Grand_Canyon'] = 'park17  This was a chilly day, at the edge of dusk. The vastness of the Grand Canyon was overwhelming._';
-$park['The_Virgin_River_that_runs_through_Zion_National_Park'] = 'park16 Close to the mouth of the Narrows at Zion. The water seems placid, but it\'s swift and rough and deceptively deep. Whenever I\m at this place on the river, I wish I could carry all those rocks home in my pockets._';
+$park['The_Virgin_River_that_runs_through_Zion_National_Park'] = 'park16 Close to the mouth of the Narrows at Zion. The water seems placid, but it\'s swift and rough and deceptively deep. Whenever I\'m at this place on the river, I wish I could carry all those rocks home in my pockets._';
 $park['Another_Virgin_River_shot_from_Zion'] = 'park15 A little further down the river. On this day, the weather moved between chilly and cloudy to sunny and hot. The only constant was that this water was COLD!_';
-$park['Quinault_Rainforest_in_Olympic_National_Park'] = 'park14 After a weekend of hiking,swimming and kayaking, we stopped for some final photos of waterfalls and beautiful trees!_';
-$park['The_Reflection_Lakes_Trail_at_Paradise_in_Mt._Rainier_National_Park'] = 'park13 One of our favorite hikes in the park. It\s beautiful any time of year, and it is often under-utilized._';
+$park['Quinault_Rainforest_in_Olympic_National_Park'] = 'park14 After a weekend of hiking, swimming and kayaking, we stopped for some final photos of waterfalls and beautiful trees!_';
+$park['The_Reflection_Lakes_Trail_at_Paradise_in_Mt._Rainier_National_Park'] = 'park13 One of our favorite hikes in the park. It\'s beautiful any time of year, and it is often under-utilized._';
 $park['Richardson_Grove_in Redwood_National_park'] = 'park12 One of my favorite quick stops in this park. My favorite place is the Lady Bird Johnson Grove, but you can\'t rush that one!_';
 $park['Trees_and_rocks_at_Joshua_Tree_State_Park'] = 'park11 It looks quiet, but there is more action here than meets the eye. Careful stillness always results in lizards, including iguanas that sun themselves on the rock formations. I can take or leave the trees, but the rocks get me every time._';
 $park['Geothermal_wonders_in_Yellowstone_National_Park'] = 'park10 No matter how many times I go to Yellowstone, I will never stop being amazed by the amazing colors of these pools._';
